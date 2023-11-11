@@ -1,0 +1,5 @@
+package com.services.employmentservice.service;
+
+public class EmployeeService {
+
+}

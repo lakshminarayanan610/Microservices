@@ -1,0 +1,5 @@
+package com.services.departmentservice.dto;
+
+public class DepartmentDTO {
+
+}

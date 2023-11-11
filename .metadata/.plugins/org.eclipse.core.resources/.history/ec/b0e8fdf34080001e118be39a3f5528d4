@@ -1,0 +1,6 @@
+package com.services.departmentservice.service;
+
+public interface DepartmentService {
+
+	DepartmentDTO saveDepartment(DepartmentDTO department);
+}

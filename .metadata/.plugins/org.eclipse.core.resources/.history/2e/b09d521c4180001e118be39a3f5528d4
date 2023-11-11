@@ -1,0 +1,14 @@
+package com.services.departmentservice.service.impl;
+
+import com.services.departmentservice.dto.DepartmentDTO;
+import com.services.departmentservice.service.DepartmentService;
+
+public class DepartmentServiceImpl implements DepartmentService {
+
+	@Override
+	public DepartmentDTO saveDepartment(DepartmentDTO department) {
+		
+		return null;
+	}
+
+}

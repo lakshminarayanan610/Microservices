@@ -1,0 +1,5 @@
+package com.services.employmentservice.repository;
+
+public interface EmploymentRepository {
+
+}

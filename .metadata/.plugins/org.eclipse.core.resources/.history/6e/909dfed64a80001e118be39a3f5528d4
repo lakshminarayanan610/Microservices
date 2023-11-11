@@ -1,0 +1,20 @@
+package com.services.employmentservice.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.services.employmentservice.dto.EmployeeDTO;
+import com.services.employmentservice.repository.EmployeeRepository;
+import com.services.employmentservice.service.EmployeeService;
+
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeRepository employeeRepo;
+
+	@Override
+	public EmployeeDTO saveEmployee(EmployeeDTO employeeDto) {
+		Employee
+		return null;
+	}
+
+}

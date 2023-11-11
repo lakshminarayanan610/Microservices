@@ -1,0 +1,5 @@
+package com.services.employmentservice.entity;
+
+public class Employee {
+
+}

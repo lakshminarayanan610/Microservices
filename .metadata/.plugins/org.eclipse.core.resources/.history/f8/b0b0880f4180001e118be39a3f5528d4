@@ -1,0 +1,5 @@
+package com.services.departmentservice.service.impl;
+
+public class DepartmentServiceImpl {
+
+}
