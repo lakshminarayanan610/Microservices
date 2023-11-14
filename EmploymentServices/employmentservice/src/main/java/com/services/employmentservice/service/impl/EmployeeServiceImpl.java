@@ -46,7 +46,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 		//DepartmentDTO departmentDto = restTemplate.getForObject("http://localhost:8080/api/v1/departments/getDepartmentByCode/"+employee.getDepartmentCode(), DepartmentDTO.class);
 		
-		DepartmentDTO departmentDto = webClient.get().uri("http://localhost:8080/api/v1/departments/getDepartmentByCode/"+employee.getDepartmentCode())
+		DepartmentDTO departmentDto = webClient.get().uri("DEPARTMENT-SERVICE"+employee.getDepartmentCode())
 				                                     .retrieve()
 				                                     .bodyToMono(DepartmentDTO.class)
 				                                     .block();
