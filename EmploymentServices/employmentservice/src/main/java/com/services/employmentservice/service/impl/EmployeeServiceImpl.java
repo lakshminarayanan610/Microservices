@@ -2,7 +2,6 @@ package com.services.employmentservice.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import com.services.employmentservice.dto.APIResponseDTO;
@@ -46,7 +45,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 		//DepartmentDTO departmentDto = restTemplate.getForObject("http://localhost:8080/api/v1/departments/getDepartmentByCode/"+employee.getDepartmentCode(), DepartmentDTO.class);
 		
-		DepartmentDTO departmentDto = webClient.get().uri("DEPARTMENT-SERVICE"+employee.getDepartmentCode())
+		DepartmentDTO departmentDto = webClient.get().uri("DEPARTMENT-SERVICE/api/v1/departments/getDepartmentByCode/"+employee.getDepartmentCode())
 				                                     .retrieve()
 				                                     .bodyToMono(DepartmentDTO.class)
 				                                     .block();
